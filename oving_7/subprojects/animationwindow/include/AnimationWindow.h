@@ -16,6 +16,7 @@
 #include "internal/FontCache.h"
 #include "internal/nuklear_configured.h"
 #include "internal/windows_main_fix.h"
+#include "MessageType.h"
 
 namespace TDT4102 {
 // Forward declaration of Widget class
@@ -120,7 +121,7 @@ class AnimationWindow {
     void show_info_dialog(const std::string& message) const;
     // Show an alert message to the user
     void show_error_dialog(const std::string& message) const;
-
+    
     // Getters for the window dimensions
     int width() const;
     int height() const;

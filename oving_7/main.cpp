@@ -14,7 +14,7 @@ void Clear() {
 
 int main() {
     // createFibonacci();
-    Clear();
+    // Clear();
     Matrix minMatrise(4, 8);
     minMatrise.set(2, 2, 100);
     // std::cout << minMatrise;
@@ -27,32 +27,32 @@ int main() {
     // std::cout << "----------"<<std::endl;
     // std::cout << kopiMatrise;
 
-    Matrix matrise2 = minMatrise;
-    matrise2.set(1,1,420);
-    Matrix matrise3(minMatrise);
-    matrise3.set(2,4,700);
+    // Matrix matrise2 = minMatrise;
+    // matrise2.set(1,1,420);
+    // Matrix matrise3(minMatrise);
+    // matrise3.set(2,4,700);
     
-    // std::cout<<minMatrise;
+    // // std::cout<<minMatrise;
+    // // std::cout << "----------"<<std::endl;
     // std::cout << "----------"<<std::endl;
-    std::cout << "----------"<<std::endl;
     
-    std::cout<<matrise2;
-    std::cout << "----------"<<std::endl;
+    // std::cout<<matrise2;
+    // std::cout << "----------"<<std::endl;
     
-    std::cout<<matrise3;
-    std::cout << "----------"<<std::endl;
+    // std::cout<<matrise3;
+    // std::cout << "----------"<<std::endl;
 
-    matrise2+=matrise3;
-    std::cout<<matrise2;
-    std::cout << "----------"<<std::endl;
+    // matrise2+=matrise3;
+    // std::cout<<matrise2;
+    // std::cout << "----------"<<std::endl;
     
-    std::cout<<matrise2+matrise2;
-    std::cout << "----------"<<std::endl;
+    // std::cout<<matrise2+matrise2;
+    // std::cout << "----------"<<std::endl;
     
-    std::cout<<matrise2;
-    std::cout << "----------"<<std::endl;
+    // std::cout<<matrise2;
+    // std::cout << "----------"<<std::endl;
     
-    
+    testMatrix();
     dummyTest();
     return 0;
 }

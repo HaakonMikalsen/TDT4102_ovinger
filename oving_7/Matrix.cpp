@@ -18,11 +18,11 @@ void Matrix::set(int row, int col, double value) {
 // Her kan du gjøre 2d (frivillig):
 
 // BEGIN: 2f
-std::ostream& operator<<(std::ostream& os, const Matrix& m) {
-    for (int i = 0; i < m.rows; i++) {
+std::ostream& operator<<(std::ostream& os, const Matrix& rhs) {
+    for (int i = 0; i < rhs.rows; i++) {
         os << "|";
-        for (int j = 0; j < m.columns; j++) {
-            os << m.get(i, j);
+        for (int j = 0; j < rhs.columns; j++) {
+            os << rhs.get(i, j);
             os << " , ";
         }
         os << "|" << std::endl;
@@ -83,6 +83,36 @@ Matrix Matrix::operator+(const Matrix& rhs){
 
 void testMatrix() {
     // Her kan du teste løsningen din (oppgave 5c):
+    Matrix A{2,2};
+    A.set(0,0,1);
+    A.set(0,1,2);
+    A.set(1,0,3);
+    A.set(1,1,4);
+
+    Matrix B{2,2};
+    B.set(0,0,4);
+    B.set(0,1,3);
+    B.set(1,0,2);
+    B.set(1,1,1);
+    
+    Matrix C{2,2};
+    C.set(0,0,1);
+    C.set(0,1,3);
+    C.set(1,0,1.5);
+    C.set(1,1,2);
+
+    std::cout << "--------"<<std::endl;
+    std::cout << A;
+    std::cout << "--------"<<std::endl;
+    std::cout << B;
+    std::cout << "--------"<<std::endl;
+    std::cout << C;
+    std::cout << "--------"<<std::endl;
+    A+=B+C;
+    std::cout << A;
+    std::cout << "--------"<<std::endl;
+    
+    
 }
 
 // Her kan du gjøre 5d (frivillig):
